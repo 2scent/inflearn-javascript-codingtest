@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>출력결과</title>
+</head>
+
+<body>
+    <script>
+        function solution(strs) {
+            let result = '';
+
+            for (const str of strs) {
+                if (str.length > result.length) {
+                    result = str;
+                }
+            }
+
+            return result;
+        }
+        let str = ["teacher", "time", "student", "beautiful", "good"];
+        console.log(solution(str));
+    </script>
+</body>
+
+</html>
