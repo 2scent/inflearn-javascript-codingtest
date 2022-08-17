@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>출력결과</title>
+</head>
+
+<body>
+    <script>
+        function solution(s) {
+            const isOdd = s.length % 2 === 1;
+            const mid = Math.floor(s.length / 2);
+
+            if (isOdd) {
+                return s[mid];
+            } else {
+                return s.substring(mid - 1, mid + 1);
+            }
+        }
+        console.log(solution("study")); // u
+        console.log(solution("good")); // oo
+    </script>
+</body>
+
+</html>
