@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>출력결과</title>
+</head>
+
+<body>
+    <script>
+        function solution(s) {
+            let result = '';
+
+            for (const c of s) {
+                if (result.indexOf(c) === -1) {
+                    result += c;
+                }
+            }
+
+            return result;
+        }
+
+        console.log(solution("ksekkset"));  // kset
+    </script>
+</body>
+
+</html>
