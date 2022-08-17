@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>출력결과</title>
+</head>
+
+<body>
+    <script>
+        function solution(s) {
+            let count = 0;
+
+            for (const c of s) {
+                if (c === c.toUpperCase()) {
+                    count++;
+                }
+            }
+
+            return count;
+        }
+
+        let str = "KoreaTimeGood";
+        console.log(solution(str)); // 3
+    </script>
+</body>
+
+</html>
