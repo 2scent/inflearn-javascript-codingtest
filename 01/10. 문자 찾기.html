@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>출력결과</title>
+</head>
+
+<body>
+    <script>
+        function solution(s, t) {
+            return s.split(t).length - 1;
+
+            let count = 0;
+
+            for (const c of s) {
+                if (c === t) {
+                    count++;
+                }
+            }
+
+            return count;
+        }
+
+        console.log(solution("COMPUTERPROGRAMMING", 'R'));    // 3
+        console.log(solution("COMPUTERPROGRAMMING", 'G'));    // 2
+    </script>
+</body>
+
+</html>
